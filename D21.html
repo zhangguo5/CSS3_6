@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>动画</title>
+		<style>
+			body {
+				padding: 100px;
+			}
+			
+			#img1 {
+				/*所有过渡动画的时间都为1秒*/
+				transition: all 1s;
+			}
+			
+			#img1:hover {
+				transform: rotate(360deg);
+			}
+			
+			#img2 {
+				/*当动画针对width时时间为0.5秒，高度为2秒*/
+				transition: width 0.5s, height 2s ease-in;
+			}
+			
+			#img2:hover {
+				width: 100px;
+				height: 50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<img src="img/7.jpg" id="img1" />
+		<img src="img/7.jpg" id="img2" width="300" height="200" />
+	</body>
+
+</html>

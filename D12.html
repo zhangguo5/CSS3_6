@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box {
+				width: 500px;
+				height: 200px;
+				position: relative;
+				background: #ccc;
+				margin: 100px auto;
+				font: 35px/200px "microsoft yahei";
+				text-align: center;
+				text-shadow: 0 1px 1px #fff;
+			}
+			
+			.box:before {
+				content: "";
+				position: absolute;
+				z-index: -1;
+				bottom: 15px;
+				left: 10px;
+				width: 50%;
+				max-width: 150px;
+				height: 20%;
+				/*添加阴影效果*/
+				box-shadow: 0 15px 10px rgba(125, 125, 125, 0.8);
+				/*添加transform属性*/
+				transform: rotate(-3deg);
+			}
+			
+			.box:after {
+				content: "";
+				position: absolute;
+				z-index: -1;
+				bottom: 15px;
+				right: 10px;
+				width: 50%;
+				max-width: 150px;
+				height: 20%;
+				/*添加阴影效果*/
+				box-shadow: 0 15px 10px rgba(125, 125, 125, 0.8);
+				/*添加transform属性*/
+				transform: rotate(3deg);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="div3" class="box">
+			Drop Shadows with CSS3
+		</div>
+	</body>
+
+</html>
